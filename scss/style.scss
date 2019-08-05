@@ -10,7 +10,9 @@ $darken: #1b1b1b;
 
 /* $primary: #ce9c6b; */
 
-$primary: #f5a637;
+/* $primary: #f5a637; */
+
+$primary: #EBBA4D;
 
 
 @mixin border-radius($radius) {
@@ -35,10 +37,11 @@ body {
 	font-family: $font-primary;
 	// background-image:url(../images/navy_blue.png);
 	background: $darken;
-	font-size: 15px;
+	font-size: 18px;
 	line-height: 1.8;
 	font-weight: 300;
-	color: lighten($black,60%);
+	color: lighten($black,70%); 
+	/* color:#fff; */
 	&.menu-show {
 		overflow: hidden;
 		position: fixed;
@@ -632,8 +635,8 @@ h1, h2, h3, h4, h5,
 //SERVICES
 .services{
 	.icon{
-		width: 60px;
-		height: 60px;
+		width: 93px;
+		height: 93px;
 		margin: 0 auto;
 		position: relative;
 		z-index: 0;
@@ -649,7 +652,7 @@ h1, h2, h3, h4, h5,
 			@include transition(.3s);
 		}
 		span{
-			font-size: 30px;
+			font-size: 70px;
 			color: $primary;
 			z-index: 1;
 		}
@@ -2089,9 +2092,9 @@ textarea.form-control {
 	padding-left: 7px;
     padding-right: 7px;
     border-radius: 2px;
-	border: 1px solid #f5a637;
+	border: 1px solid #EBBA4D;
 	
-	background: linear-gradient(to left, #000 50%, #f5a637 50%);
+	background: linear-gradient(to left, #000 50%, #EBBA4D 50%);
     background-size: 200% 100%;
     background-position:left bottom;
     /* margin-right:10px;  */
@@ -2100,4 +2103,13 @@ textarea.form-control {
 	-webkit-transition: all ease 0.8s;
 	-moz-transition: all ease 0.8s;
 	transition: all ease 0.8s;
+}
+
+.guchi-color{
+	background: white;
+	color: black;
+	
+	h2{
+		color: black;
+	}
 }
